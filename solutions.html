@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,18 +21,27 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="index.html">
+<a class="navbar-brand d-flex align-items-center" href="index.html">
 
-Kubonet Solutions Inc.
+<img src="images/kbnlogo.png" class="logo-img">
+
+<div class="ms-3">
+
+<h4 class="brand-title">Kubonet Solutions Inc.</h4>
+
+<div class="brand-subtitle">Enterprise ICT Solutions</div>
+
+</div>
 
 </a>
 
-<button class="navbar-toggler"
-type="button"
+<button class="navbar-toggler" type="button"
 data-bs-toggle="collapse"
 data-bs-target="#navbarNav">
 
@@ -44,29 +53,17 @@ data-bs-target="#navbarNav">
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
-<li class="nav-item">
-<a class="nav-link active" href="solutions.html">Solutions</a>
-</li>
+<li class="nav-item"><a class="nav-link active" href="solutions.html">Solutions</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="products.html">Products</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="projects.html">Projects</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -76,19 +73,21 @@ data-bs-target="#navbarNav">
 
 </nav>
 
-<section class="py-5 bg-primary text-white text-center">
+<!-- PAGE HEADER -->
 
-<div class="container">
+<section class="hero" style="min-height:55vh;">
+
+<div class="container text-center">
 
 <h1 class="display-4 fw-bold">
 
-Our ICT Solutions
+Enterprise ICT Solutions
 
 </h1>
 
 <p class="lead">
 
-Reliable. Secure. Scalable.
+Reliable • Secure • Scalable Technology for Modern Businesses
 
 </p>
 
@@ -96,9 +95,27 @@ Reliable. Secure. Scalable.
 
 </section>
 
+<!-- SOLUTIONS -->
+
 <section class="py-5">
 
 <div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Our Core Solutions
+
+</h2>
+
+<p class="section-text">
+
+End-to-end ICT solutions designed for enterprises, SMBs, schools, government agencies, hospitals, and commercial establishments.
+
+</p>
+
+</div>
 
 <div class="row g-4">
 
@@ -110,7 +127,7 @@ Reliable. Secure. Scalable.
 
 <p>
 
-Design, implementation and optimization of enterprise LAN, WAN, routing, switching and network infrastructure.
+Design, implementation and optimization of LAN, WAN, routing, switching, SDN and enterprise network infrastructure.
 
 </p>
 
@@ -122,11 +139,11 @@ Design, implementation and optimization of enterprise LAN, WAN, routing, switchi
 
 <div class="solution-card">
 
-<h3>📶 Wireless Solutions</h3>
+<h3>📶 Wireless Infrastructure</h3>
 
 <p>
 
-High-performance WiFi deployment for offices, schools, hotels, hospitals and commercial buildings.
+Enterprise WiFi solutions for offices, hotels, schools, warehouses and commercial buildings.
 
 </p>
 
@@ -138,11 +155,11 @@ High-performance WiFi deployment for offices, schools, hotels, hospitals and com
 
 <div class="solution-card">
 
-<h3>🎥 Smart Security</h3>
+<h3>🎥 CCTV & Smart Security</h3>
 
 <p>
 
-Professional IP CCTV, access control, video analytics and integrated security systems.
+IP surveillance, access control, facial recognition and integrated security systems.
 
 </p>
 
@@ -154,11 +171,11 @@ Professional IP CCTV, access control, video analytics and integrated security sy
 
 <div class="solution-card">
 
-<h3>🗄 Data Center</h3>
+<h3>🗄 Data Center Solutions</h3>
 
 <p>
 
-Servers, storage, virtualization, backup solutions and data center infrastructure.
+Servers, virtualization, storage, backup, disaster recovery and rack infrastructure.
 
 </p>
 
@@ -174,7 +191,7 @@ Servers, storage, virtualization, backup solutions and data center infrastructur
 
 <p>
 
-Copper and fiber structured cabling designed for reliability and future expansion.
+Professional Cat6/Cat6A and Fiber Optic structured cabling systems.
 
 </p>
 
@@ -186,11 +203,11 @@ Copper and fiber structured cabling designed for reliability and future expansio
 
 <div class="solution-card">
 
-<h3>🌐 Fiber Optic Solutions</h3>
+<h3>☁ Cloud & Cybersecurity</h3>
 
 <p>
 
-Fiber backbone, fusion splicing, ODF installation and end-to-end fiber connectivity.
+Firewall, VPN, endpoint security, cloud infrastructure and hybrid workplace solutions.
 
 </p>
 
@@ -204,47 +221,49 @@ Fiber backbone, fusion splicing, ODF installation and end-to-end fiber connectiv
 
 </section>
 
+<!-- INDUSTRIES -->
+
 <section class="py-5 bg-light">
 
-<div class="container text-center">
+<div class="container">
 
-<h2 class="fw-bold">
+<h2 class="section-title text-center">
 
-Why Choose Kubonet?
+Industries We Serve
 
 </h2>
 
-<div class="row mt-5">
+<div class="row text-center mt-5">
 
 <div class="col-md-3">
 
-<h1>✔</h1>
+<h4>🏢</h4>
 
-<h5>Experienced Engineers</h5>
+<h5>Corporate Offices</h5>
 
 </div>
 
 <div class="col-md-3">
 
-<h1>✔</h1>
+<h4>🏥</h4>
 
-<h5>Enterprise Products</h5>
-
-</div>
-
-<div class="col-md-3">
-
-<h1>✔</h1>
-
-<h5>Reliable Support</h5>
+<h5>Healthcare</h5>
 
 </div>
 
 <div class="col-md-3">
 
-<h1>✔</h1>
+<h4>🎓</h4>
 
-<h5>Trusted Technology Partners</h5>
+<h5>Education</h5>
+
+</div>
+
+<div class="col-md-3">
+
+<h4>🏛</h4>
+
+<h5>Government</h5>
 
 </div>
 
@@ -253,6 +272,39 @@ Why Choose Kubonet?
 </div>
 
 </section>
+
+<!-- TECHNOLOGY PARTNERS -->
+
+<section class="py-5">
+
+<div class="container text-center">
+
+<h2 class="section-title">
+
+Technology Partners
+
+</h2>
+
+<p class="section-text">
+
+Partnering with globally recognized technology brands to deliver reliable ICT solutions.
+
+</p>
+
+<div class="row mt-5 align-items-center">
+
+<div class="col-md-2 col-4"><img src="images/partners/huawei.png" class="img-fluid"></div>
+<div class="col-md-2 col-4"><img src="images/partners/hikvision.png" class="img-fluid"></div>
+<div class="col-md-2 col-4"><img src="images/partners/dahua.png" class="img-fluid"></div>
+<div class="col-md-2 col-4"><img src="images/partners/tplink.png" class="img-fluid"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
 
 <section class="py-5 bg-primary text-white text-center">
 
@@ -260,21 +312,19 @@ Why Choose Kubonet?
 
 <h2 class="fw-bold">
 
-Let's Build Your Next ICT Project
+Ready to Modernize Your Business?
 
 </h2>
 
-<p>
+<p class="lead">
 
-Speak with our solutions specialists today.
+Talk to our ICT specialists and discover the right solution for your organization.
 
 </p>
 
-<a href="contact.html"
+<a href="contact.html" class="btn btn-light btn-lg mt-3">
 
-class="btn btn-light btn-lg mt-3">
-
-Request a Quotation
+Request a Free Consultation
 
 </a>
 
