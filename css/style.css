@@ -1,0 +1,258 @@
+:root{
+    --primary:#0057B8;
+    --secondary:#00AEEF;
+    --dark:#0F172A;
+    --light:#F8FAFC;
+    --gray:#64748B;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8f9fa;
+    color:#1F2937;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.custom-navbar{
+    background:rgba(15,23,42,.88);
+    backdrop-filter:blur(16px);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    padding:12px 0;
+}
+
+.logo-img{
+    height:80px;
+    width:auto;
+    transition:.35s;
+}
+
+.logo-img:hover{
+    transform:scale(1.05);
+}
+
+.brand-title{
+    margin:0;
+    font-size:23px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    color:#fff;
+}
+
+.brand-subtitle{
+    color:#b9d9ff;
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.navbar-nav .nav-link{
+    color:white !important;
+    margin-left:20px;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#00AEEF !important;
+}
+
+.navbar-nav .nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#00AEEF;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover::after{
+    width:100%;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    padding-top:180px;
+    padding-bottom:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,40,90,.82),rgba(0,70,140,.82)),
+    url("../images/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-logo{
+    width:180px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:58px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:21px;
+    line-height:1.8;
+}
+
+.btn{
+    border-radius:50px;
+    padding:14px 38px;
+    font-weight:600;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.about-section{
+    padding:100px 0;
+}
+
+.section-tag{
+    color:var(--primary);
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-title{
+    font-size:42px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+}
+
+.section-text{
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+}
+
+/* ===========================
+   SOLUTIONS
+=========================== */
+
+.solution-card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.solution-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+/* ===========================
+   PRODUCTS
+=========================== */
+
+.product-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.product-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.product-card h4{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+}
+
+.product-card p{
+    color:#666;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+.logo-img{
+    height:60px;
+}
+
+.brand-title{
+    font-size:18px;
+}
+
+.hero{
+    padding-top:160px;
+}
+
+.hero-logo{
+    width:130px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.btn{
+    margin-top:10px;
+    width:100%;
+}
+
+}
